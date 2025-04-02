@@ -1,5 +1,3 @@
-// --- Start of 12-02-2025.java ---
-// Software installation and task submission
 
 
 package practice1;
@@ -11,28 +9,25 @@ public class Testing1{
 }
 
 
-// --- End of 12-02-2025.java ---
-
-// --- Start of 14-02-2025.java ---
 import java.sql.*;
 
 public class JDBC{
   public static void main(String[] args){
     try{
-      Class.forName("com.mysql.cj.jdbc.Driver");  // Register    // 1
+      Class.forName("com.mysql.cj.jdbc.Driver");  
       System.out.println("11111)
       Connection con = DriverManager.getConnection(
         "jdbc:mysql: // localhost:3306 /friday" , "root","root");
-      //here sonoo is database name, root is username and password     // 2
+      
       System.out.println("22222");
-      Statement stmt = con.createStatement();   // 3
+      Statement stmt = con.createStatement();   
       System.out.println("33333");  
-      ResultSet rs = stmt.executeQuery("select * from student");  // 4
+      ResultSet rs = stmt.executeQuery("select * from student");  
   
       while(rs.next())
       System.out.println(rs.getInt(1)+ " " + rs.getString + " " + rs.getString(3);
       }
-      con.close();   //5
+      con.close();   
   
       }
     catch(Exception e){
@@ -42,9 +37,6 @@ public class JDBC{
 }
 
 
-// --- End of 14-02-2025.java ---
-
-// --- Start of 15-02-2025.java ---
 import java.sql.Connection;
 import java.sql.DriverManager;
 public class CRUD_Test {
@@ -63,9 +55,7 @@ public class CRUD_Test {
     return connection;
 
 
-// --- End of 15-02-2025.java ---
 
-// --- Start of 15-02-25-crud_test.java ---
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -100,10 +90,6 @@ public class CRUD_Test {
     
     
 
-
-// --- End of 15-02-25-crud_test.java ---
-
-// --- Start of 17-02-2025.java ---
 package CRUD;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -221,5 +207,4 @@ public void delete_data(String sl_no){
 }
 
 
-// --- End of 17-02-2025.java ---
 
